@@ -89,5 +89,6 @@ public class PracticeFormTest {
         $(".table-responsive tr:nth-child(10) > td:nth-child(2)").shouldHave(Condition.textCaseSensitive("Haryana Panipat"));
 
         $("#closeLargeModal").click();
+        $(".practice-form-wrapper").shouldBe(Condition.visible);
     }
 }
