@@ -113,13 +113,13 @@ public class RegistrationPage {
         return this;
     }
 
-    @Step("Choose state {chooseState}")
+    @Step("Choose state {state}")
     public RegistrationPage chooseState(String state) {
         stateCityComponent.chooseState(state);
         return this;
     }
 
-    @Step("Choose city {chooseCity}")
+    @Step("Choose city {city}")
     public RegistrationPage chooseCity(String city) {
         stateCityComponent.chooseCity(city);
         return this;
@@ -144,7 +144,7 @@ public class RegistrationPage {
         return this;
     }
 
-    @Step("Checking data in the form {fieldName}, {value}")
+    @Step("Click close button")
     public RegistrationPage clickClose() {
         close.click();
         return this;
