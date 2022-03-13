@@ -19,7 +19,7 @@
 | Selenoid |                                                                           Allure                                                                             | Jenkins | Github |
 
 ### - Video sample with passing test case
-![Video](resources/readme/record_tests.gif)
+![Video](https://github.com/elakovnick24/project-x/blob/master/src/test/resources/readme/record_tests.gif)
 
 ## Screenshots:
 
