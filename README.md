@@ -27,5 +27,5 @@
 ![Jenkins](https://github.com/elakovnick24/project-x/blob/master/src/test/resources/readme/projectx-demo-jenkins-allure%20%5BJenkins%5D%202022-03-14%2001-06-12.png)
 
 ### - Allure reports
-![Allure1](https://github.com/elakovnick24/project-x/blob/master/src/test/resources/readme/Allure Report_1.png)
-![Allure2](https://github.com/elakovnick24/project-x/blob/master/src/test/resources/readme/Allure Report_2.png)
+![Allure1](https://github.com/elakovnick24/project-x/blob/master/src/test/resources/readme/Allure%20Report_1.png)
+![Allure2](https://github.com/elakovnick24/project-x/blob/master/src/test/resources/readme/Allure%20Report_2.png)
