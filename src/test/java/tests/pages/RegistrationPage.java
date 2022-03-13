@@ -67,26 +67,26 @@ public class RegistrationPage {
         return this;
     }
 
-    @Step("Choose gender {setUserGender}")
+    @Step("Choose gender")
     public RegistrationPage setUserGender() {
         userGenderRadio.click();
         return this;
     }
 
-    @Step("Input user number {setUserNumber}")
+    @Step("Input user number {userNumber}")
     public RegistrationPage setUserNumber(String userNumber) {
         userNumberInput.setValue(userNumber);
         return this;
     }
 
-    @Step("Choose in calender user birth date {setBirthDate}")
+    @Step("Choose in calender user birth date {day}, {month}, {year}")
     public RegistrationPage setBirthDate(String day, String month, String year) {
         $("#dateOfBirthInput").click();
         calendarComponent.setDate(day, month, year);
         return this;
     }
 
-    @Step("Choose subject {setSubjects}")
+    @Step("Choose subject {subject}")
     public RegistrationPage setSubjects(String subject) {
         subjectsField.click();
         subjectsComponents.setSubjects(subject);
