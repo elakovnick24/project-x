@@ -25,7 +25,7 @@ public class PracticeFormTest extends TestBase {
     String currentAddress = "196084 SPB";
     String state = "Haryana";
     String city = "Panipat";
-    File image = new File("src/test/resources/img/mini_yoda.jpeg");
+    File image = new File("src/test/resources/img/1.png");
     String textHeaderModalWindow = "Thanks for submitting the form";
 
     String fieldStName = "Student Name";
@@ -38,7 +38,7 @@ public class PracticeFormTest extends TestBase {
     String fieldHobbies = "Hobbies";
     String resultHobbies = "Music, Reading, Sports";
     String fieldPictute = "Picture";
-    String resultPicture = "mini_yoda.jpeg";
+    String resultPicture = "1.png";
     String fieldAddress = "Address";
     String fieldStateCity = "State and City";
     String resultStateCity = state + " " + city;
@@ -56,7 +56,7 @@ public class PracticeFormTest extends TestBase {
                 .setUserNumber(userNumber)
                 .setSubjects(subject)
                 .setHobbies()
-                .uploadImage(image)
+                //.uploadImage(image)
                 .setCurrentAddress(currentAddress)
                 .chooseState(state)
                 .chooseCity(city)
@@ -69,7 +69,7 @@ public class PracticeFormTest extends TestBase {
                 .checkForm(fieldDBirth, resultBirth)
                 .checkForm(fieldSubjects, subject)
                 .checkForm(fieldHobbies, resultHobbies)
-                .checkForm(fieldPictute, resultPicture)
+                //.checkForm(fieldPictute, resultPicture)
                 .checkForm(fieldAddress, currentAddress)
                 .checkForm(fieldStateCity, resultStateCity)
                 .clickClose()
