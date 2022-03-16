@@ -4,6 +4,7 @@ import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import tests.pages.RegistrationPage;
 
@@ -43,6 +44,7 @@ public class PracticeFormTest extends TestBase {
     String fieldStateCity = "State and City";
     String resultStateCity = state + " " + city;
 
+    @Tag("smoke")
     @Test
     public void happyPathTest() throws InterruptedException {
         SelenideLogger.addListener("allure", new AllureSelenide());
