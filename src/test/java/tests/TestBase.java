@@ -3,9 +3,6 @@ package tests;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import helpers.Attach;
-import io.qameta.allure.Owner;
-import io.qameta.allure.Severity;
-import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -24,14 +21,19 @@ public class TestBase {
         Configuration.browser = System.getProperty("browser", "chrome");
 
         //password and user for remote browser
-        String user = System.getProperty("user");
-        String password = System.getProperty("password");
+        String user = System.setProperty("user", "user1");
+        String password = System.setProperty("password", "1234");
+        String remoteBrowser = System.setProperty("remoteBrowser", "selenoid.autotests.cloud/wd/hub");
+        user = System.getProperty("user");
+        password = System.getProperty("password");
+        remoteBrowser = System.getProperty("remoteBrowser");
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
         Configuration.browserCapabilities = capabilities;
-        Configuration.remote = "https://" + user + ":" + password + "@" + System.getProperty("remoteBrowser");
+        //Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
+        Configuration.remote = "https://" + user + ":" + password + "@" + remoteBrowser;
     }
 
     @AfterEach
